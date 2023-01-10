@@ -2,16 +2,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-margin-top: 50px ;
 }
 
 body{
     font-family: 'monserrat', sans-serif;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 .container{
     width: 100%;
     background-color: black; 
-    margin: 50px auto;
+    margin: 0px auto;
 }
 .wrapper{
     width: 100vw;
@@ -21,10 +24,10 @@ body{
    .navbar{
     display: flex;
     justify-content: center;
-}
-
-.brand{
-    margin-top: -10px;
+    position: fixed;
+    width: 100%;
+    background-color: black;
+    padding: 1rem;
 }
 .menu{
     display: flex;
@@ -155,6 +158,10 @@ transition: ease-in .3s
 }
 .portafolio img{
     width: 300px;
+    border: 2px solid transparent;
+}
+.portafolio img:hover{
+    border: 2px solid whitesmoke;
 }
 .contact {
     
@@ -201,4 +208,8 @@ transition: ease-in .3s
     .portafolio img{
         align-self: center;
     }
+}
+.code{
+    font-size: 1.5rem;
+    font-family: 'Times New Roman', Times, serif;
 }
