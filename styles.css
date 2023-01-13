@@ -277,7 +277,10 @@ transition: ease-in .3s
         text-decoration: none;
     } 
 }
-.code{
+
+.codigo{
     font-size: 1.5rem;
     font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    color: aliceblue;
 }
