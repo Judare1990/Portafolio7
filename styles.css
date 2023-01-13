@@ -201,13 +201,81 @@ transition: ease-in .3s
     color: white;
     padding-top: 3%;
 }
+
+.content__menu{
+    display: none;
+}
+
+.icon__menu{
+    display: none;
+}
+
 @media (max-width: 800px) {
+    .navbar{
+        display: none;
+    }
     .portafolio{
         flex-direction: column;
     }
     .portafolio img{
         align-self: center;
     }
+
+    .icon__menu{
+        position: relative;
+        z-index: 60001;
+    
+        display: flex;
+        justify-content: start;
+    }
+    
+    .icon__menu img {
+        margin: 20px;
+        border-radius: 12px;
+        width: 40px;
+        cursor: pointer;
+        background-color: blue;
+        position: fixed;
+        
+    }
+
+    .content__menu {
+        background-color: white;
+        min-width: 50%;
+        height: 100vh;
+        position: fixed;
+        transition: transform 0.5s;
+        z-index: 60000;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    }
+    
+    .active {
+        transform: translateX(-100%);
+    }
+    
+    .content__menu ul {
+        list-style: none; 
+    } 
+    
+    .content__menu ul li {
+        text-decoration: none;
+        margin: 30px 20px;
+        text-align: center;
+        cursor: pointer;
+    }
+    
+    .content__menu ul li a {
+        text-decoration: none;
+        color: black;
+        font-size: 1.5rem;
+    }
+    
+    .content__menu ul li:hover {
+        background-color: rgb(113, 99, 241);
+        text-decoration: none;
+    } 
 }
 .code{
     font-size: 1.5rem;
