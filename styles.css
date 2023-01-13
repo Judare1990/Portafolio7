@@ -76,6 +76,10 @@ transition: ease-in .3s
     padding-top: 3%;
 }
 
+.icons :hover{
+    border: 2px solid whitesmoke;
+}
+
 .text3{
     margin: 0 auto;
     width: fit-content;
@@ -121,6 +125,11 @@ transition: ease-in .3s
 .mobile{
     padding-top: 2%;
 }
+
+.mobile :hover{
+    border: 2px solid whitesmoke;
+}
+
 .experience {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -195,8 +204,8 @@ transition: ease-in .3s
 
 .img__contact {
     margin: 0 auto;
-    
 }
+
 .tittle__seccion{
     color: white;
     padding-top: 3%;
